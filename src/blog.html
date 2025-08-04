@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="w-full bg-lightgreen">
+      <section
+        class="max-w-[1440px] py-[16px] px-[72px] m-auto max-lg:p-[24px] max-md:p-[20px] navbar"
+      >
+        <div class="flex justify-between">
+          <div>
+            <img src="../assets/images/logo.png" />
+          </div>
+          <div class="flex gap-[25px] justify-evenly main-nav">
+            <div class="flex gap-[32px] items-center">
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="index.html"
+                >Home</a
+              >
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="about us.html"
+              >
+                About Us
+              </a>
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="shop.html"
+                >Shop
+              </a>
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="blog.html"
+                >Blog
+              </a>
+            </div>
+            <div class="flex gap-[12px]">
+              <div>
+                <button
+                  class="text-xl font-Montserrat text-white bg-primaryshadegreen rounded-[10px] h-[56px] w-[125px]"
+                >
+                  Signup
+                </button>
+              </div>
+              <div>
+                <img src="../assets/images/uil_cart (1).png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="myNav" class="overlay">
+          <a class="closebtn" onclick="closeNav()"> &#10006;</a>
+          <img src="../assets/images/logo.png" />
+          <div class="flex gap-[25px] justify-evenly flex-col">
+            <div class="flex gap-[32px] items-center flex-col">
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="index.html"
+                >Home</a
+              >
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="about us.html"
+              >
+                About Us
+              </a>
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="shop.html"
+                >Shop
+              </a>
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="blog.html"
+                >Blog
+              </a>
+            </div>
+            <div class="flex gap-[12px] justify-center">
+              <div>
+                <button
+                  class="text-xl font-Montserrat text-white bg-primaryshadegreen rounded-[10px] h-[56px] w-[125px]"
+                >
+                  Signup
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div onclick="openNav()" class="menubtn">&#9776;</div>
+      </section>
+    </div>
+    <!-- main section  -->
+    <div
+      style="background-image: url(../assets/images/mainsec.jpg)"
+      class="w-full"
+    >
+      <section
+        class="max-w-[1440px] py-[24px] px-[72px] m-auto max-lg:p-[24px] max-md:p-[20px]"
+      >
+        <div class="bg-primary100 rounded-[12px]">
+          <div class="py-[120px] text-center max-sm:p-[20px]">
+            <h2 class="font-bold text-lightsecgreen text-[42px] font-Lato">
+              Blog
+            </h2>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- latest news -->
+    <div class="w-full bg-secondarygreen">
+      <section
+        class="pb-[40px] px-[72px] pt-[76px] max-w-[1440px] m-auto max-lg:p-[24px] max-md:p-[20px]"
+      >
+        <div class="flex gap-[18.5px] max-md:flex-wrap">
+          <div>
+            <div class="flex gap-[4.5px]">
+              <h2 class="font-bold text-[32px] text-white font-Lato">
+                Latest News
+              </h2>
+              <span
+                class="w-[55%] h-[2px] self-center"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #c99d45 -0.29%,
+                    #cca14a 3.73%,
+                    #d8ac5b 8.76%,
+                    #eabf76 14.8%,
+                    #f7cc89 17.81%,
+                    #f3c783 21.84%,
+                    #e8b974 26.87%,
+                    #d5a35b 31.9%,
+                    #bc8438 36.92%,
+                    #a86b1d 40.95%,
+                    #e0b467 65.09%,
+                    #e7bb72 74.14%,
+                    #eec17c 79.17%,
+                    #be883a 100.29%
+                  );
+                "
+              ></span>
+            </div>
+
+            <div class="flex gap-[20px] flex-col mt-[16px] mb-[22px]">
+              <div class="flex gap-[20px]">
+                <img src="../assets/images/latestnews.png" />
+                <div class="self-center">
+                  <p class="text-primarytint text-[16px] font-Montserrat">
+                    Jan 12, 2023
+                  </p>
+                  <p class="text-[24px] font-medium text-primarytint font-Lato">
+                    What Is The Best Plant For You?
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-[20px]">
+                <img src="../assets/images/latestnews.png" />
+                <div class="self-center">
+                  <p class="text-primarytint text-[16px] font-Montserrat">
+                    Jan 12, 2023
+                  </p>
+                  <p class="text-[24px] font-medium text-primarytint font-Lato">
+                    What Is The Best Plant For You?
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-[20px]">
+                <img src="../assets/images/latestnews.png" />
+                <div class="self-center">
+                  <p class="text-primarytint text-[16px] font-Montserrat">
+                    Jan 12, 2023
+                  </p>
+                  <p class="text-[24px] font-medium text-primarytint font-Lato">
+                    What Is The Best Plant For You?
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-[20px]">
+                <img src="../assets/images/latestnews.png" />
+                <div class="self-center">
+                  <p class="text-primarytint text-[16px] font-Montserrat">
+                    Jan 12, 2023
+                  </p>
+                  <p class="text-[24px] font-medium text-primarytint font-Lato">
+                    What Is The Best Plant For You?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-[4.5px]">
+              <h2 class="font-bold text-[32px] text-white font-Lato">Social</h2>
+              <span
+                class="w-[87%] h-[2px] self-center"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #c99d45 -0.29%,
+                    #cca14a 3.73%,
+                    #d8ac5b 8.76%,
+                    #eabf76 14.8%,
+                    #f7cc89 17.81%,
+                    #f3c783 21.84%,
+                    #e8b974 26.87%,
+                    #d5a35b 31.9%,
+                    #bc8438 36.92%,
+                    #a86b1d 40.95%,
+                    #e0b467 65.09%,
+                    #e7bb72 74.14%,
+                    #eec17c 79.17%,
+                    #be883a 100.29%
+                  );
+                "
+              ></span>
+            </div>
+            <img src="../assets/images/Frame 67.png" class="mt-[11px]" />
+          </div>
+          <div
+            class="w-[85%] mt-[20px] flex flex-col gap-[16px] max-md:w-[100%]"
+          >
+            <div>
+              <img src="../assets/images/latest1.png" />
+              <div>
+                <p
+                  class="text-primarytint text-[16px] font-Montserrat mt-[8px]"
+                >
+                  May 4, 2023
+                </p>
+                <h2
+                  class="font-bold text-[32px] text-primarytint mt-[16px] font-Lato"
+                >
+                  What Is The Best Plant For You?
+                </h2>
+                <p
+                  class="text-primarytint text-[16px] font-Montserrat mt-[16px] pb-[16px]"
+                  style="
+                    border-bottom: 1.5px solid transparent;
+                    border-image: linear-gradient(
+                      90deg,
+                      #c99d45 -0.29%,
+                      #cca14a 3.73%,
+                      #d8ac5b 8.76%,
+                      #eabf76 14.8%,
+                      #f7cc89 17.81%,
+                      #f3c783 21.84%,
+                      #e8b974 26.87%,
+                      #d5a35b 31.9%,
+                      #bc8438 36.92%,
+                      #a86b1d 40.95%,
+                      #e0b467 65.09%,
+                      #e7bb72 74.14%,
+                      #eec17c 79.17%,
+                      #be883a 100.29%
+                    );
+                    border-image-slice: 1;
+                  "
+                >
+                  Our goal has always been to motivate, encourage and release
+                  our fellow creatives to do their thing Sed a libero. Mauris
+                  sollicitudin fermentum libero. Phasellus volutpat, metus eget
+                  egestas mollis, lacus lacus blandit dui id egestas quam mauris
+                  ut lacus. Fusce risus nisl, viverra et, tempor et, pretium in,
+                  sapien. Cras ultricies...
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="../assets/images/latest2.png" />
+              <div>
+                <p
+                  class="text-primarytint text-[16px] font-Montserrat mt-[8px]"
+                >
+                  May 4, 2023
+                </p>
+                <h2
+                  class="font-bold text-[32px] text-primarytint mt-[16px] font-Lato"
+                >
+                  What Is The Best Plant For You?
+                </h2>
+                <p
+                  class="text-primarytint text-[16px] font-Montserrat mt-[16px] pb-[16px]"
+                  style="
+                    border-bottom: 1.5px solid transparent;
+                    border-image: linear-gradient(
+                      90deg,
+                      #c99d45 -0.29%,
+                      #cca14a 3.73%,
+                      #d8ac5b 8.76%,
+                      #eabf76 14.8%,
+                      #f7cc89 17.81%,
+                      #f3c783 21.84%,
+                      #e8b974 26.87%,
+                      #d5a35b 31.9%,
+                      #bc8438 36.92%,
+                      #a86b1d 40.95%,
+                      #e0b467 65.09%,
+                      #e7bb72 74.14%,
+                      #eec17c 79.17%,
+                      #be883a 100.29%
+                    );
+                    border-image-slice: 1;
+                  "
+                >
+                  Our goal has always been to motivate, encourage and release
+                  our fellow creatives to do their thing Sed a libero. Mauris
+                  sollicitudin fermentum libero. Phasellus volutpat, metus eget
+                  egestas mollis, lacus lacus blandit dui id egestas quam mauris
+                  ut lacus. Fusce risus nisl, viverra et, tempor et, pretium in,
+                  sapien. Cras ultricies...
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="../assets/images/latest3.png" />
+              <div>
+                <p
+                  class="text-primarytint text-[16px] font-Montserrat mt-[8px]"
+                >
+                  May 4, 2023
+                </p>
+                <h2
+                  class="font-bold text-[32px] text-primarytint mt-[16px] font-Lato"
+                >
+                  What Is The Best Plant For You?
+                </h2>
+                <p
+                  class="text-primarytint text-[16px] font-Montserrat mt-[16px] pb-[16px]"
+                  style="
+                    border-bottom: 1.5px solid transparent;
+                    border-image: linear-gradient(
+                      90deg,
+                      #c99d45 -0.29%,
+                      #cca14a 3.73%,
+                      #d8ac5b 8.76%,
+                      #eabf76 14.8%,
+                      #f7cc89 17.81%,
+                      #f3c783 21.84%,
+                      #e8b974 26.87%,
+                      #d5a35b 31.9%,
+                      #bc8438 36.92%,
+                      #a86b1d 40.95%,
+                      #e0b467 65.09%,
+                      #e7bb72 74.14%,
+                      #eec17c 79.17%,
+                      #be883a 100.29%
+                    );
+                    border-image-slice: 1;
+                  "
+                >
+                  Our goal has always been to motivate, encourage and release
+                  our fellow creatives to do their thing Sed a libero. Mauris
+                  sollicitudin fermentum libero. Phasellus volutpat, metus eget
+                  egestas mollis, lacus lacus blandit dui id egestas quam mauris
+                  ut lacus. Fusce risus nisl, viverra et, tempor et, pretium in,
+                  sapien. Cras ultricies...
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-center gap-[8px] mt-[20px] btnhidden">
+              <div class="bg-primary100 px-[16px] py-[8px] rounded-[4px]">
+                <a href="blogdetail.html">
+                  <img src="../assets/images/arrowleft.png"
+                /></a>
+              </div>
+              <div
+                class="bg-primary100 px-[16px] py-[8px] rounded-[4px] text-2xl text-white font-Lato content-center"
+              >
+                1
+              </div>
+              <div
+                class="bg-primary100 px-[16px] py-[8px] rounded-[4px] text-2xl text-white font-Lato content-center"
+              >
+                1
+              </div>
+              <div class="text-white text-2xl self-end">....</div>
+              <div
+                class="bg-primary100 px-[16px] py-[8px] rounded-[4px] text-2xl text-white font-Lato content-center"
+              >
+                19
+              </div>
+              <div
+                class="bg-primary100 px-[16px] py-[8px] rounded-[4px] text-2xl text-white font-Lato content-center"
+              >
+                20
+              </div>
+              <div class="bg-primary100 px-[16px] py-[8px] rounded-[4px]">
+                <a href="blog.html"
+                  ><img src="../assets/images/arrowright.png"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- footer -->
+    <!-- img slide show -->
+    <div class="w-full bg-secondarygreen m-auto">
+      <section class="max-lg:p-[24px] max-md:p-[20px]">
+        <!-- <img src="../assets/images/footer.png" class="justify-self-center" /> -->
+        <div class="slider">
+          <div class="row">
+            <div class="column">
+              <img src="../assets/images/slider1.png" />
+            </div>
+            <div class="column">
+              <img src="../assets/images/slider2.png" />
+            </div>
+            <div class="column">
+              <img src="../assets/images/slider3.png" />
+            </div>
+            <div class="column">
+              <img src="../assets/images/slider4.png" />
+            </div>
+            <div class="column">
+              <img src="../assets/images/slidder5.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      style="
+        background-image: url(../assets/images/mainsec.jpg);
+        background-repeat: no-repeat;
+        /* filter: blur(20px); */
+        background-size: cover;
+
+        background-position: center;
+      "
+    >
+      <section
+        class="max-w-[1440px] py-[126.5px] px-[72px] m-auto max-lg:p-[24px] max-md:p-[20px]"
+      >
+        <div class="text-center">
+          <h2 class="text-primarytint text-3xl font-bold font-Lato">
+            News Letter
+          </h2>
+          <p class="font-normal text-[16px] text-primarytint font-Montserrat">
+            Subscribe our News letter
+          </p>
+          <div class="mt-[16px] flex m-auto w-[504px] max-sm:w-[90%]">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="bg-primarytint p-[10px] rounded-tl-[15px] rounded-bl-[15px] w-[480px]"
+            />
+            <div
+              class="bg-primaryshadegreen w-[35px] rounded-tr-[15px] rounded-br-[15px] max-sm:w-[20%]"
+            >
+              <img src="../assets/images/send.png" class="ml-[6px] mt-[6px]" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-[40px] flex flex-col gap-[16px] justify-center m-auto w-[30%] max-sm:w-[80%]"
+        >
+          <div class="justify-items-center">
+            <img src="../assets/images/logo.png" />
+          </div>
+          <p class="font-Montserrat text-xl text-primarytint text-center">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+          <div class="justify-items-center">
+            <img src="../assets/images/Frame 67.png" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>

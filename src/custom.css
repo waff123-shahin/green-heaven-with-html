@@ -1,0 +1,209 @@
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+* {
+  overflow-x: hidden;
+}
+.menubtn {
+  display: none;
+}
+
+.navbar a:hover {
+  color: #028743;
+}
+.overlay-content {
+  position: relative;
+  width: 100%;
+  /* text-align: left;
+    margin-top: 30px;
+    margin-left: 40px; */
+}
+.overlay-content a {
+  display: block;
+  padding: 10px 0px;
+  text-align: center;
+}
+.overlay img {
+  margin-left: 25px;
+  margin-top: 30px;
+}
+.overlay a:hover {
+  background-color: #1f5763;
+  color: white;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 25px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.slider {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider img {
+  width: 300px;
+  height: 230px;
+  object-fit: cover;
+}
+.slider .row {
+  display: flex;
+  gap: 10px;
+  width: calc(100px * 30);
+  animation: slide 20s linear infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(calc(100px * 30));
+  }
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+iframe {
+  width: 100%;
+  height: 300px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.slider img:hover {
+  transform: translateZ(15px);
+  transition: 4s;
+}
+.slider .column {
+  perspective: 100px;
+}
+@media screen and (max-width: 1396px) {
+  .flex-wrapp {
+    flex-wrap: wrap;
+  }
+  .flexwidth {
+    width: 31%;
+  }
+  .flexwidth1 {
+    width: 100%;
+  }
+  .flexclass {
+    width: 100%;
+  }
+  .flexdir {
+    flex-direction: column-reverse;
+  }
+  .align {
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .flexwidth {
+    width: 48%;
+  }
+  .flexwidth1 {
+    width: 48%;
+  }
+  .align {
+    justify-self: auto;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .menubtn {
+    float: right;
+    margin-top: -55px;
+    display: block;
+    /* margin-right: 20px; */
+    color: #0b0e1e;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 35px;
+  }
+  .main-nav {
+    display: none;
+  }
+  .flex-wrp {
+    flex-wrap: wrap;
+  }
+  .maxwidth {
+    width: 100%;
+  }
+  .slider .row {
+    animation: none;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+  }
+  .slider {
+    height: auto;
+  }
+  .row .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .flexwidth {
+    width: 100%;
+  }
+  .flexwidth1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btnhidden {
+    display: none;
+  }
+  .heroclass {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+}

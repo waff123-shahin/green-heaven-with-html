@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=star"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="w-full bg-lightgreen">
+      <section
+        class="max-w-[1440px] py-[16px] px-[72px] m-auto max-lg:p-[24px] max-md:p-[20px] navbar"
+      >
+        <div class="flex justify-between">
+          <div>
+            <img src="../assets/images/logo.png" />
+          </div>
+          <div class="flex gap-[25px] justify-evenly main-nav">
+            <div class="flex gap-[32px] items-center">
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="index.html"
+                >Home</a
+              >
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="about us.html"
+              >
+                About Us
+              </a>
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="shop.html"
+                >Shop
+              </a>
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="blog.html"
+                >Blog
+              </a>
+            </div>
+            <div class="flex gap-[12px]">
+              <div>
+                <button
+                  class="text-xl font-Montserrat text-white bg-primaryshadegreen rounded-[10px] h-[56px] w-[125px]"
+                >
+                  Signup
+                </button>
+              </div>
+              <div>
+                <img src="../assets/images/uil_cart (1).png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="myNav" class="overlay">
+          <a class="closebtn" onclick="closeNav()"> &#10006;</a>
+          <img src="../assets/images/logo.png" />
+          <div class="flex gap-[25px] justify-evenly flex-col">
+            <div class="flex gap-[32px] items-center flex-col">
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="index.html"
+                >Home</a
+              >
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="about us.html"
+              >
+                About Us
+              </a>
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="shop.html"
+                >Shop
+              </a>
+              <a
+                class="text-2xl color-black600 font-medium font-Lato"
+                href="blog.html"
+                >Blog
+              </a>
+            </div>
+            <div class="flex gap-[12px] justify-center">
+              <div>
+                <button
+                  class="text-xl font-Montserrat text-white bg-primaryshadegreen rounded-[10px] h-[56px] w-[125px]"
+                >
+                  Signup
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div onclick="openNav()" class="menubtn">&#9776;</div>
+      </section>
+    </div>
+    <!-- main section  -->
+    <div
+      style="background-image: url(../assets/images/mainsec.jpg)"
+      class="w-full"
+    >
+      <section
+        class="max-w-[1440px] py-[24px] px-[72px] m-auto max-lg:p-[24px] max-md:p-[20px]"
+      >
+        <div class="bg-primary100 rounded-[12px]">
+          <div class="py-[120px] text-center max-sm:p-[20px]">
+            <h2 class="font-bold text-lightsecgreen text-[42px] font-Lato">
+              Product
+            </h2>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- hero section -->
+    <div class="w-full bg-secondarygreen">
+      <section
+        class="py-[40px] px-[72px] max-w-[1440px] m-auto max-lg:p-[24px] max-md:p-[20px]"
+      >
+        <div class="flex gap-[20px] flex-wrp">
+          <img src="../assets/images/Image.png" class="maxwidth" />
+          <!-- The grid: four columns -->
+          <div class="row">
+            <div class="column">
+              <img
+                src="img_nature.jpg"
+                alt="Nature"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="column">
+              <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);" />
+            </div>
+            <div class="column">
+              <img
+                src="img_mountains.jpg"
+                alt="Mountains"
+                onclick="myFunction(this);"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="img_lights.jpg"
+                alt="Lights"
+                onclick="myFunction(this);"
+              />
+            </div>
+          </div>
+
+          <!-- The expanding image container -->
+          <div class="container">
+            <!-- Close the image -->
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="closebtn"
+              >&times;</span
+            >
+
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width: 100%" />
+
+            <!-- Image text -->
+            <div id="imgtext"></div>
+          </div>
+          <div>
+            <h2 class="text-primarytint text-2xl font-medium font-Lato">
+              Top die hard Succulents Plants
+            </h2>
+            <div class="flex gap-[6px] mt-[16px]">
+              <div class="flex">
+                <img src="../assets/images/star.png" />
+                <img src="../assets/images/star.png" />
+                <img src="../assets/images/star.png" />
+                <img src="../assets/images/star.png" />
+                <img src="../assets/images/star.png" />
+              </div>
+              <p class="font-Montserrat text-xs font-normal text-grayy">
+                157 Reviews
+              </p>
+            </div>
+            <div class="flex mt-[32px] gap-[6px] flex-col">
+              <div class="flex gap-[10px]">
+                <p
+                  class="font-Montserrat font-normal text-primarytint text-[18px] mr-[20px]"
+                >
+                  $49
+                </p>
+                <p class="font-Montserrat font-normal text-grayy text-[18px]">
+                  $99
+                </p>
+              </div>
+              <p class="font-Montserrat font-normal text-grayy text-[16px]">
+                Save 50% right now
+              </p>
+            </div>
+            <ul class="list-inside list-disc mt-[24px]">
+              <h2
+                class="font-Montserrat font-normal text-primarytint text-[18px]"
+              >
+                Features:
+              </h2>
+              <div class="mt-[4px]">
+                <li class="font-Montserrat font-normal text-grayy text-[16px]">
+                  Made with full cotton
+                </li>
+                <li class="font-Montserrat font-normal text-grayy text-[16px]">
+                  Slim fit for any body
+                </li>
+                <li class="font-Montserrat font-normal text-grayy text-[16px]">
+                  Quality control by JC
+                </li>
+              </div>
+            </ul>
+            <div class="flex mt-[32px] gap-[11px]">
+              <button
+                class="rounded-[100px] p-[10px] w-[225px] bg-primaryshadegreen font-Montserrat font-normal text-white text-[16px]"
+              >
+                Buy Now
+              </button>
+              <img src="../assets/images/uil_cart (1).png" />
+            </div>
+            <div class="flex flex-col gap-[16px] mt-[20px]">
+              <div class="flex gap-[8px]">
+                <img src="../assets/images/globe.png" />
+                <p
+                  class="font-Montserrat font-normal text-secgrayy text-[16px]"
+                >
+                  Free shipping worldwide
+                </p>
+              </div>
+              <div class="flex gap-[8px]">
+                <img src="../assets/images/shipping.png" />
+                <p
+                  class="font-Montserrat font-normal text-secgrayy text-[16px]"
+                >
+                  100% Secured Payment
+                </p>
+              </div>
+              <div class="flex gap-[8px]">
+                <img src="../assets/images/person.png" />
+                <p
+                  class="font-Montserrat font-normal text-secgrayy text-[16px]"
+                >
+                  Made by the Professionals
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- reviews -->
+    <div class="w-full bg-secondarygreen">
+      <section
+        class="py-[40px] px-[72px] max-w-[1440px] m-auto max-lg:p-[24px] max-md:p-[20px]"
+      >
+        <div>
+          <div class="flex gap-[58px]">
+            <a class="font-Montserrat font-normal text-primarygray text-[16px]"
+              >Description
+            </a>
+            <div class="gap-[8px] flex">
+              <a
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #c99d45 -0.29%,
+                    #cca14a 3.73%,
+                    #d8ac5b 8.76%,
+                    #eabf76 14.8%,
+                    #f7cc89 17.81%,
+                    #f3c783 21.84%,
+                    #e8b974 26.87%,
+                    #d5a35b 31.9%,
+                    #bc8438 36.92%,
+                    #a86b1d 40.95%,
+                    #e0b467 65.09%,
+                    #e7bb72 74.14%,
+                    #eec17c 79.17%,
+                    #be883a 100.29%
+                  );
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+                class="font-Montserrat font-normal text-[16px]"
+                >Reviews
+              </a>
+              <a>
+                <span
+                  class="w-[32px] px-[10px] py-[3px] text-primarytint text-xs font-Montserrat rounded-[24px]"
+                  style="
+                    background-image: linear-gradient(
+                      90deg,
+                      #c99d45 -0.29%,
+                      #cca14a 3.73%,
+                      #d8ac5b 8.76%,
+                      #eabf76 14.8%,
+                      #f7cc89 17.81%,
+                      #f3c783 21.84%,
+                      #e8b974 26.87%,
+                      #d5a35b 31.9%,
+                      #bc8438 36.92%,
+                      #a86b1d 40.95%,
+                      #e0b467 65.09%,
+                      #e7bb72 74.14%,
+                      #eec17c 79.17%,
+                      #be883a 100.29%
+                    );
+                    color: #e5fff2;
+                  "
+                  >157</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="flex mt-[32px] flex-col gap-[20px]">
+            <div
+              class="flex gap-[23px] pb-[32px] w-[44%] max-md:w-[100%]"
+              style="
+                border-bottom: 1.5px solid transparent;
+                border-image: linear-gradient(
+                  90deg,
+                  #c99d45 -0.29%,
+                  #cca14a 3.73%,
+                  #d8ac5b 8.76%,
+                  #eabf76 14.8%,
+                  #f7cc89 17.81%,
+                  #f3c783 21.84%,
+                  #e8b974 26.87%,
+                  #d5a35b 31.9%,
+                  #bc8438 36.92%,
+                  #a86b1d 40.95%,
+                  #e0b467 65.09%,
+                  #e7bb72 74.14%,
+                  #eec17c 79.17%,
+                  #be883a 100.29%
+                );
+                border-image-slice: 1;
+              "
+            >
+              <p><img src="../assets/images/review.png" /></p>
+              <div>
+                <div class="flex">
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                </div>
+                <p
+                  class="text-primarytint font-normal text-[16px] font-Montserrat mt-[8px]"
+                >
+                  You made it so simple. My new site is so much faster and
+                  easier to work with than my old site. I just choose the page,
+                  make the changes.
+                </p>
+                <div class="flex gap-[3px] flex-col pt-[32px]">
+                  <p
+                    class="text-primarytint font-normal text-[16px] font-Montserrat"
+                  >
+                    Kristin Watson
+                  </p>
+                  <p
+                    class="text-primarytint font-normal text-xs font-Montserrat"
+                  >
+                    March 14, 2021
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex gap-[23px] pb-[32px] w-[44%] max-md:w-[100%]"
+              style="
+                border-bottom: 1.5px solid transparent;
+                border-image: linear-gradient(
+                  90deg,
+                  #c99d45 -0.29%,
+                  #cca14a 3.73%,
+                  #d8ac5b 8.76%,
+                  #eabf76 14.8%,
+                  #f7cc89 17.81%,
+                  #f3c783 21.84%,
+                  #e8b974 26.87%,
+                  #d5a35b 31.9%,
+                  #bc8438 36.92%,
+                  #a86b1d 40.95%,
+                  #e0b467 65.09%,
+                  #e7bb72 74.14%,
+                  #eec17c 79.17%,
+                  #be883a 100.29%
+                );
+                border-image-slice: 1;
+              "
+            >
+              <p><img src="../assets/images/review.png" /></p>
+              <div>
+                <div class="flex">
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                </div>
+                <p
+                  class="text-primarytint font-normal text-[16px] font-Montserrat mt-[8px]"
+                >
+                  You made it so simple. My new site is so much faster and
+                  easier to work with than my old site. I just choose the page,
+                  make the changes.
+                </p>
+                <div class="flex gap-[3px] flex-col pt-[32px]">
+                  <p
+                    class="text-primarytint font-normal text-[16px] font-Montserrat"
+                  >
+                    Kristin Watson
+                  </p>
+                  <p
+                    class="text-primarytint font-normal text-xs font-Montserrat"
+                  >
+                    March 14, 2021
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex gap-[23px] pb-[32px] w-[44%] max-md:w-[100%]"
+              style="
+                border-bottom: 1.5px solid transparent;
+                border-image: linear-gradient(
+                  90deg,
+                  #c99d45 -0.29%,
+                  #cca14a 3.73%,
+                  #d8ac5b 8.76%,
+                  #eabf76 14.8%,
+                  #f7cc89 17.81%,
+                  #f3c783 21.84%,
+                  #e8b974 26.87%,
+                  #d5a35b 31.9%,
+                  #bc8438 36.92%,
+                  #a86b1d 40.95%,
+                  #e0b467 65.09%,
+                  #e7bb72 74.14%,
+                  #eec17c 79.17%,
+                  #be883a 100.29%
+                );
+                border-image-slice: 1;
+              "
+            >
+              <p><img src="../assets/images/review.png" /></p>
+              <div>
+                <div class="flex">
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                  <img src="../assets/images/star.png" />
+                </div>
+                <p
+                  class="text-primarytint font-normal text-[16px] font-Montserrat mt-[8px]"
+                >
+                  You made it so simple. My new site is so much faster and
+                  easier to work with than my old site. I just choose the page,
+                  make the changes.
+                </p>
+                <div class="flex gap-[3px] flex-col pt-[32px]">
+                  <p
+                    class="text-primarytint font-normal text-[16px] font-Montserrat"
+                  >
+                    Kristin Watson
+                  </p>
+                  <p
+                    class="text-primarytint font-normal text-xs font-Montserrat"
+                  >
+                    March 14, 2021
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- post a comment -->
+    <div class="w-full bg-secondarygreen">
+      <section
+        class="pb-[40px] px-[72px] max-w-[1440px] m-auto max-lg:p-[24px] max-md:p-[20px]"
+      >
+        <div class="w-[45%] max-md:w-[100%]">
+          <div class="p-[16px] rounded-[10px] flex justify-between bg-terigray">
+            <p class="text-2xl text-white font-medium font-Lato">
+              Post A Review
+            </p>
+            <div><img src="../assets/images/downarrow.png" /></div>
+          </div>
+          <div>
+            <h2
+              class="text-2xl text-primarytint font-medium font-Lato mt-[6px]"
+            >
+              Rating
+            </h2>
+            <div class="flex gap-[1px] mb-[16px] mt-[4px]">
+              <img src="../assets/images/star.png" />
+              <img src="../assets/images/star.png" />
+              <img src="../assets/images/star.png" />
+              <img src="../assets/images/star.png" />
+              <img src="../assets/images/star.png" />
+            </div>
+            <div class="flex flex-col gap-[8px]">
+              <div class="flex gap-[6px] flex-col">
+                <p class="text-2xl text-primarytint font-medium font-Lato">
+                  Review Title
+                </p>
+                <input
+                  class="text-[17px] font-Poppins text-greyshades w-[520px] px-[20px] py-[12px] rounded-[15px] max-sm:w-[95%]"
+                  placeholder="Give your review a title"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.2);
+
+                    box-shadow: 6px 6px 8px 0px #0000008c inset;
+
+                    box-shadow: 5px 4px 4px 0px #00000040;
+                  "
+                />
+              </div>
+              <div class="flex flex-col gap-[6px]">
+                <p class="text-2xl text-primarytint font-medium font-Lato">
+                  Review
+                </p>
+                <input
+                  placeholder="Write your comment here"
+                  class="text-[17px] font-Poppins text-greyshades w-[520px] px-[20px] pt-[12px] pb-[92px] rounded-[15px] max-sm:w-[95%]"
+                  placeholder="Give your review a title"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.2);
+
+                    box-shadow: 6px 6px 8px 0px #0000008c inset;
+
+                    box-shadow: 5px 4px 4px 0px #00000040;
+                  "
+                />
+              </div>
+              <div class="flex flex-col gap-[22px]">
+                <p class="text-2xl text-primarytint font-medium font-Lato">
+                  Upload Picture<span
+                    class="text-greyshades2 text-xs font-Montserrat"
+                    >(optional)</span
+                  >
+                </p>
+                <div><img src="../assets/images/upload.png" /></div>
+              </div>
+              <div class="flex flex-col gap-[6px]">
+                <p class="text-2xl text-primarytint font-medium font-Lato">
+                  Name<span class="text-greyshades2 text-xs font-Montserrat"
+                    >(displayed publicly)</span
+                  >
+                </p>
+                <input
+                  placeholder="Write your Name here"
+                  class="text-[17px] font-Poppins text-greyshades w-[520px] px-[20px] py-[12px] rounded-[15px] max-sm:w-[95%]"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.2);
+
+                    box-shadow: 6px 6px 8px 0px #0000008c inset;
+
+                    box-shadow: 5px 4px 4px 0px #00000040;
+                  "
+                />
+              </div>
+              <div class="flex flex-col gap-[6px]">
+                <p class="text-2xl text-primarytint font-medium font-Lato">
+                  Email<span class="text-greyshades2 text-xs font-Montserrat"
+                    >(Private)</span
+                  >
+                </p>
+                <input
+                  placeholder="Write your Email here"
+                  class="text-[17px] font-Poppins text-greyshades w-[520px] px-[20px] py-[12px] rounded-[15px] max-sm:w-[95%]"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.2);
+
+                    box-shadow: 6px 6px 8px 0px #0000008c inset;
+
+                    box-shadow: 5px 4px 4px 0px #00000040;
+                  "
+                />
+              </div>
+            </div>
+            <div class="justify-self-end mr-[60px] max-md:mr-[0px]">
+              <button
+                class="w-[225px] p-[10px] rounded-[100px] bg-primaryshadegreen font-Montserrat text-[16px] text-white mt-[42px]"
+              >
+                Post Comment
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- special offerrs   -->
+    <div class="w-full bg-secondarygreen">
+      <section
+        class="max-w-[1440px] py-[43px] px-[72px] m-auto max-lg:p-[24px] max-md:p-[20px]"
+      >
+        <div class="justify-items-center">
+          <img src="../assets/images/Heading icon.png" />
+          <h2 class="text-white font-bold text-[42px] font-Lato">
+            Special offers
+          </h2>
+        </div>
+        <div class="flex justify-evenly gap-[20px] mt-[24px] max-md:flex-wrap">
+          <div class="bg-white p-[16px] rounded-[16px] w-[33%] max-md:w-[100%]">
+            <img src="../assets/images/spec1.png" class="max-md:w-[100%]" />
+            <div>
+              <h2 class="text-black700 text-2xl font-medium font-Lato">
+                Top die hard Succulents Plants
+              </h2>
+              <p class="font-Montserrat text-xl text-black700">$126.86</p>
+              <div class="flex">
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+              </div>
+
+              <button
+                class="bg-primaryshadegreen text-white font-Montserrat font-normal text-[16px] p-[10px] w-[100%] rounded-[100px] mt-[18px]"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white p-[16px] rounded-[16px] w-[33%] max-md:w-[100%]">
+            <img src="../assets/images/spec2.png" />
+            <div>
+              <h2 class="text-black700 text-2xl font-medium font-Lato">
+                Top die hard Succulents Plants
+              </h2>
+              <p class="font-Montserrat text-xl text-black700">$126.86</p>
+              <div class="flex">
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+              </div>
+
+              <button
+                class="bg-primaryshadegreen text-white font-Montserrat font-normal text-[16px] p-[10px] w-[100%] rounded-[100px] mt-[18px]"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="bg-white p-[16px] rounded-[16px] w-[33%] max-md:w-[100%]">
+            <img src="../assets/images/spec3.png" />
+            <div>
+              <h2 class="text-black700 text-2xl font-medium font-Lato">
+                Top die hard Succulents Plants
+              </h2>
+              <p class="font-Montserrat text-xl text-black700">$126.86</p>
+              <div class="flex">
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+                <img src="../assets/images/rating.png" />
+              </div>
+
+              <button
+                class="bg-primaryshadegreen text-white font-Montserrat font-normal text-[16px] p-[10px] w-[100%] rounded-[100px] mt-[18px]"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- footer -->
+    <!-- img slide show -->
+    <div class="w-full bg-secondarygreen m-auto">
+      <section class="max-lg:p-[24px] max-md:p-[20px]">
+        <!-- <img src="../assets/images/footer.png" class="justify-self-center" /> -->
+        <div class="slider">
+          <div class="row">
+            <div class="column">
+              <img src="../assets/images/slider1.png" />
+            </div>
+            <div class="column">
+              <img src="../assets/images/slider2.png" />
+            </div>
+            <div class="column">
+              <img src="../assets/images/slider3.png" />
+            </div>
+            <div class="column">
+              <img src="../assets/images/slider4.png" />
+            </div>
+            <div class="column">
+              <img src="../assets/images/slidder5.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      style="
+        background-image: url(../assets/images/mainsec.jpg);
+        background-repeat: no-repeat;
+        /* filter: blur(20px); */
+        background-size: cover;
+
+        background-position: center;
+      "
+    >
+      <section
+        class="max-w-[1440px] py-[126.5px] px-[72px] m-auto max-lg:p-[24px] max-md:p-[20px]"
+      >
+        <div class="text-center">
+          <h2 class="text-primarytint text-3xl font-bold font-Lato">
+            News Letter
+          </h2>
+          <p class="font-normal text-[16px] text-primarytint font-Montserrat">
+            Subscribe our News letter
+          </p>
+          <div class="mt-[16px] flex m-auto w-[504px] max-sm:w-[90%]">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="bg-primarytint p-[10px] rounded-tl-[15px] rounded-bl-[15px] w-[480px]"
+            />
+            <div
+              class="bg-primaryshadegreen w-[35px] rounded-tr-[15px] rounded-br-[15px] max-sm:w-[20%]"
+            >
+              <img src="../assets/images/send.png" class="ml-[6px] mt-[6px]" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-[40px] flex flex-col gap-[16px] justify-center m-auto w-[30%] max-sm:w-[80%]"
+        >
+          <div class="justify-items-center">
+            <img src="../assets/images/logo.png" />
+          </div>
+          <p class="font-Montserrat text-xl text-primarytint text-center">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+          <div class="justify-items-center">
+            <img src="../assets/images/Frame 67.png" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+
+        var imgText = document.getElementById("imgtext");
+
+        expandImg.src = imgs.src;
+
+        imgText.innerHTML = imgs.alt;
+
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
