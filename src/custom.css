@@ -67,14 +67,14 @@ a {
   display: flex;
   gap: 10px;
   width: calc(100px * 30);
-  animation: slide 20s linear infinite;
+  animation: slide 15s linear infinite;
 }
 @keyframes slide {
   0% {
     transform: translateX(0);
   }
   0% {
-    transform: translateX(calc(100px * 30));
+    transform: translateX(calc(100px * 15));
   }
 }
 /* Modal Content */
