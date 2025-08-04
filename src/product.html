@@ -132,49 +132,7 @@
       >
         <div class="flex gap-[20px] flex-wrp">
           <img src="../assets/images/Image.png" class="maxwidth" />
-          <!-- The grid: four columns -->
-          <div class="row">
-            <div class="column">
-              <img
-                src="img_nature.jpg"
-                alt="Nature"
-                onclick="myFunction(this);"
-              />
-            </div>
-            <div class="column">
-              <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);" />
-            </div>
-            <div class="column">
-              <img
-                src="img_mountains.jpg"
-                alt="Mountains"
-                onclick="myFunction(this);"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="img_lights.jpg"
-                alt="Lights"
-                onclick="myFunction(this);"
-              />
-            </div>
-          </div>
 
-          <!-- The expanding image container -->
-          <div class="container">
-            <!-- Close the image -->
-            <span
-              onclick="this.parentElement.style.display='none'"
-              class="closebtn"
-              >&times;</span
-            >
-
-            <!-- Expanded image -->
-            <img id="expandedImg" style="width: 100%" />
-
-            <!-- Image text -->
-            <div id="imgtext"></div>
-          </div>
           <div>
             <h2 class="text-primarytint text-2xl font-medium font-Lato">
               Top die hard Succulents Plants
@@ -299,7 +257,7 @@
                 class="font-Montserrat font-normal text-[16px]"
                 >Reviews
               </a>
-              <a>
+              <a class="overflow-hidden">
                 <span
                   class="w-[32px] px-[10px] py-[3px] text-primarytint text-xs font-Montserrat rounded-[24px]"
                   style="

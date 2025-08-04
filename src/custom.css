@@ -144,6 +144,19 @@ iframe {
   .align {
     justify-self: center;
   }
+  .aboutimg {
+    display: none;
+  }
+  .aboutpara {
+    width: 100%;
+    padding-left: 30px;
+  }
+  .aboutclass {
+    padding-left: 30px;
+  }
+  .flexclass {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 1120px) {
   .flexwidth {
@@ -154,6 +167,12 @@ iframe {
   }
   .align {
     justify-self: auto;
+  }
+  .aboutpara {
+    padding-left: 24px;
+  }
+  .aboutclass {
+    padding-left: 24px;
   }
 }
 
@@ -191,6 +210,12 @@ iframe {
   }
   .row .column {
     width: 100%;
+  }
+  .aboutpara {
+    padding-left: 20px;
+  }
+  .aboutclass {
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 640px) {
