@@ -12,7 +12,11 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="custom.css" />
-    <style></style>
+    <style>
+      * {
+        overflow-x: clip;
+      }
+    </style>
   </head>
   <body>
     <!-- navbar -->
@@ -126,7 +130,7 @@
         class="pb-[40px] px-[72px] pt-[76px] max-w-[1440px] m-auto max-lg:p-[24px] max-md:p-[20px]"
       >
         <div class="flex gap-[18.5px] max-md:flex-wrap">
-          <div>
+          <div class="h-[825px] sticky top-0 max-md:relative max-md:h-auto">
             <div class="flex gap-[4.5px]">
               <h2 class="font-bold text-[32px] text-white font-Lato">
                 Latest News
@@ -408,7 +412,7 @@
     </div>
     <!-- footer -->
     <!-- img slide show -->
-    <div class="w-full bg-secondarygreen m-auto">
+    <div class="w-full bg-secondarygreen m-auto overflow-x-hidden">
       <section class="max-lg:p-[24px] max-md:p-[20px]">
         <!-- <img src="../assets/images/footer.png" class="justify-self-center" /> -->
         <div class="slider">

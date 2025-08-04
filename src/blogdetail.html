@@ -12,7 +12,11 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="custom.css" />
-    <style></style>
+    <style>
+      * {
+        overflow-x: clip;
+      }
+    </style>
   </head>
   <body>
     <!-- navbar -->
@@ -138,7 +142,7 @@
         </h2>
 
         <div class="flex gap-[18.5px] flex-wrapp flexdir">
-          <div>
+          <div class="sticky h-[825px] top-0 max-md:relative max-md:h-auto">
             <div class="flex gap-[4.5px]">
               <h2 class="font-bold text-[32px] text-white font-Lato">
                 Latest News
